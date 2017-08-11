@@ -5,7 +5,7 @@ $(document).ready(function () {
         fotoArr = ["../img/gallery/foto_1.jpg", "../img/gallery/foto_2.jpg", "../img/gallery/foto_3.jpg", "../img/gallery/foto_4.jpg", "../img/gallery/foto_5.jpg", "../img/gallery/foto_6.jpg", "../img/gallery/foto_7.jpg", "../img/gallery/foto_8.jpg", "../img/gallery/foto_9.jpg", "../img/gallery/foto_10.jpg", "../img/gallery/foto_11.jpg", "../img/gallery/foto_12.jpg"];
     
     //Prepend img in the display of gallery
-    $('.display-foto').prepend('<img src="../img/gallery/foto_10.jpg" alt="Photo of our restaurant">');
+    $('.display-foto').prepend('<img src="../img/gallery/foto_1.jpg" alt="Photo of our restaurant">');
     
     //Change image when the arrows are clicked
     $('.left-arrow i').click(function () {
