@@ -47,19 +47,128 @@
                 </div>
             </header>
             <main>
+                <div class="div-cart">
+                    <p>Cart</p>
+                    <canvas class="cart" id="cart" height="70" width="90">
+                    
+                    </canvas>
+                    
+                
+                </div>
                 <div class="pizza-menu">
-                    <h3>PIZZA MARGHERITA <span class="price">8.60</span></h3>
-                    <p>mit Tomaten und Mozarella <i class="fa fa-plus-circle"></i></p>
-                    <h3>PIZZA NAPOLI <span class="price">9.20</span></h3>
-                    <p>mit Tomaten, Mozzarella und Oliven <i class="fa fa-plus-circle"></i></p>
-                    <h3>PIZZA DELLO CHEF <span class="price">10.50</span></h3>
-                    <p>mit Tomaten, Spinat und Gorgonzola <i class="fa fa-plus-circle"></i></p>
-                    <h3>PIZZA TONNO <span class="price">10.00</span></h3>
-                    <p>mit Thunfisch und Mozzarella <i class="fa fa-plus-circle"></i></p>
-                    <h3>PIZZA MILANESE <span class="price">9.00</span></h3>
-                    <p>mit Mozzarella und Salami <i class="fa fa-plus-circle"></i></p>
-                    <h3>PIZZA FANTASIE <span class="price">12.00</span></h3>
-                    <p>Belegt nach Fantasie des Bäckers! <i class="fa fa-plus-circle"></i></p>
+                    <div class="kind-pizza">
+                        <h3>PIZZA MARGHERITA</h3>
+                        <div class="plus-price">
+                            <span class="price">8.60</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>mit Tomaten und Mozarella</p>
+                    </div>
+                   <div class="kind-pizza">
+                        <h3>PIZZA NAPOLI</h3>
+                        <div class="plus-price">
+                            <span class="price">9.20</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>mit Tomaten, Mozzarella und Oliven</p>
+                   </div>
+                    <div class="kind-pizza">
+                        <h3>PIZZA DELLO CHEF</h3>
+                        <div class="plus-price">
+                            <span class="price">10.50</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>mit Tomaten, Spinat und Gorgonzola</p>
+                    </div>
+                    <div class="kind-pizza">
+                        <h3>PIZZA TONNO</h3>
+                        <div class="plus-price">
+                            <span class="price">10.00</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>mit Thunfisch und Mozzarella</p>
+                    </div>
+                    <div class="kind-pizza">
+                        <h3>PIZZA MILANESE</h3> 
+                        <div class="plus-price">
+                            <span class="price">9.00</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>mit Mozzarella und Salami</p>
+                    </div>
+                    <div class="kind-pizza">
+                        <h3>PIZZA FANTASIE</h3>
+                        <div class="plus-price">
+                            <span class="price">12.00</span>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                        <p>Belegt nach Fantasie des Bäckers!</p>
+                    </div>
+                </div>
+                <!--Modal-box-1, add to the cart-->
+                <div class="modal-box-1">
+                    <div class="modal-content-1">
+                        <div class="close">
+                            <i class="fa fa-close"></i>
+                        
+                        </div>
+                        <input type="text" name="quantity" value="1" maxlength="2">
+                        <p class="item">No item</p>
+                        <p class="order-pizza-price">0</p>
+                        <input type="checkbox" name="extra">
+                        <p>Extra Käse <span class="one-euro">(+1,00€)</span></p>
+                        <p>Summe: <span class="total-price">0</span></p>
+                        <button class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+                <!--Modal-box-2, cart and shopping form-->
+                <div class="modal-box-2">
+                    <div class="modal-content-2">
+                        <div class="close">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <div class="order-details">
+                            <h2>Ihre Bestellung</h2>
+                            <p class="total-payment"></p>
+                        </div>
+                        <form name="orderForm" action="" method="post" onsubmit="return validationOrder()">
+                            <input type="text" name="firstname" placeholder="Vorname*">
+                            <input type="text" name="lastname" placeholder="Nachname*">
+                            <input type="text" name="address" placeholder="Addresse*">
+                            <input type="text" name="number" placeholder="Nr.*">
+                            <input type="text" name="postcode" placeholder="Postleitzahl*">
+                            <input type="text" name="phone" placeholder="Telefon">
+                            <p>Wann möchten Sie Ihre Bestellung erhalten?</p>
+                            <select>
+                                <option value="sofort">Sofort
+                                </option>
+                                <option value="1830">18:30
+                                </option>
+                                <option value="1900">19:00
+                                </option>
+                                <option value="1930">19:30
+                                </option>
+                                <option value="2000">20:00
+                                </option>
+                                <option value="2030">20:30
+                                </option>
+                                <option value="2100">21:00
+                                </option>
+                                <option value="2130">21:30
+                                </option>
+                                <option value="2200">22:00
+                                </option>
+                                <option value="2230">22:30
+                                </option>
+                                <option value="2300">23:00
+                                </option>
+                            </select>
+                            <p>Anmerkungen für das Restaurant</p>
+                            <textarea></textarea>
+                            <input type="submit" value="JETZT KAUFEN">
+                        </form>
+                    </div>
+                    
                 </div>
             </main>
             <!--Footer social media icons and copyright-->
@@ -71,5 +180,9 @@
             </footer>
         </div>
 	    <script src="../js/jquery.js" type="text/javascript"></script>
+        <script src="../js/script_canvas.js" type="text/javascript"></script>
+        <script src="../js/script_order.js" type="text/javascript"></script>
+        <script src="../js/script_validation_order_form.js" type="text/javascript"></script>
+        
 	</body>
 </html>
