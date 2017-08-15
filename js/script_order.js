@@ -23,9 +23,9 @@ $(document).ready(function () {
     
     //Function: Count the sum of ordered pizza of one particular item
     function countSum() {
-        
-        $price = $('.order-pizza-price');
 
+        $price = $('.order-pizza-price');
+        
         if ($extra.is(':checked')) {
             $price = parseFloat($price.text()) + 1;
         } else {
@@ -62,7 +62,8 @@ $(document).ready(function () {
     });
     
     //Change the quantity of pizzas
-    $('input[name=quantity]').keyup(function () {
+    $('input[name=quantity]').keypress(function () {
+
         countSum();
     });
 
