@@ -1,0 +1,434 @@
+@charset "utf-8";
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header,
+main,
+footer,
+nav,
+section {
+  display: block;
+}
+#wraper {
+  background: url('../img/pizza_5.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  /*Chrome 1.0, Safari 3.0*/
+  -moz-background-size: cover;
+  /*Mozilla 3.6*/
+  -o-background-size: cover;
+  /*Opera 10.0*/
+  background-size: cover;
+  /*Standar syntax*/
+  width: 100%;
+}
+@media only screen and (min-width: 801px) {
+  #wraper {
+    max-width: 2400px;
+  }
+}
+#wraper .header {
+  padding-top: 1px;
+  width: 100%;
+}
+.header .menu-btn {
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+@media only screen and (min-width: 600px) {
+  .header .menu-btn {
+    display: none;
+  }
+}
+.menu-btn .line-btn {
+  background-color: #ffffff;
+  height: 3px;
+  position: absolute;
+  width: 26px;
+}
+.menu-btn .line-btn:nth-child(1) {
+  left: 7px;
+  top: 9px;
+}
+.menu-btn .line-btn:nth-child(2) {
+  left: 7px;
+  top: 18px;
+}
+.menu-btn .line-btn:nth-child(3) {
+  left: 7px;
+  top: 27px;
+}
+.header .menu {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .header .menu {
+    height: auto;
+    margin-top: 0;
+  }
+}
+.menu ul {
+  list-style-type: none;
+  display: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+@media only screen and (min-width: 600px) {
+  .menu ul {
+    display: block;
+    padding-left: 0px;
+    padding-top: 0;
+    text-align: center;
+  }
+}
+.menu ul li {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 600px) {
+  .menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 821px) {
+  .menu ul li {
+    font-size: 1.2em;
+    margin-left: 50px;
+  }
+}
+.menu ul li a:link {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu ul li a:visited {
+  color: #ffffff;
+}
+.menu ul li:nth-child(1) {
+  color: red;
+}
+main {
+  width: 100%;
+  /*External div of logo*/
+}
+@media only screen and (min-width: 600px) {
+  main {
+    padding-top: 150px;
+  }
+}
+main .logo-external {
+  background-color: white;
+  border: 5px solid red;
+  -webkit-border-radius: 50%;
+  /*Chrome, Safari*/
+  -moz-border-radius: 50%;
+  /*Mozilla*/
+  border-radius: 50%;
+  /*Standar syntax*/
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 150px;
+}
+@media only screen and (min-width: 321px) {
+  main .logo-external {
+    height: 200px;
+    margin-top: 80px;
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main .logo-external {
+    height: 300px;
+    margin-top: 100px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  main .logo-external {
+    height: 400px;
+    margin-top: 150px;
+    width: 400px;
+  }
+}
+.logo-external a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo-external a:visited {
+  color: #ffffff;
+}
+/*Internal div of logo*/
+.logo-internal {
+  background: red;
+  /*For browsers that not support gradients*/
+  /*Safari 5.1 to 6.0*/
+  background: -webkit-repeating-linear-gradient(90deg, red, red 1px, white 2px, white 2px);
+  /*Opera 11.1 to 12.0*/
+  background: -o-repeating-linear-gradient(90deg, red, red 1px, white 2px, white 2px);
+  /*Firefox 3.6 to 15*/
+  background: -moz-repeating-linear-gradient(90deg, red, red 1px, white 2px, white 2px);
+  /*Standar syntax*/
+  background: repeating-linear-gradient(90deg, red, red 1px, white 2px, white 2px);
+  -webkit-border-radius: 50%;
+  /*Chrome 4.0, Safari 3.1*/
+  -moz-border-radius: 50%;
+  /*Mozilla 3.0*/
+  border-radius: 50%;
+  /*Standar syntax*/
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding-top: 30px;
+  width: 130px;
+}
+@media only screen and (min-width: 321px) {
+  .logo-internal {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-internal {
+    height: 280px;
+    padding-top: 40px;
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .logo-internal {
+    height: 380px;
+    padding-top: 50px;
+    width: 380px;
+  }
+}
+.logo-internal p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 321px) {
+  .logo-internal p {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-internal p {
+    font-size: 4.5em;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .logo-internal p {
+    font-size: 6em;
+  }
+}
+.logo-internal p:nth-child(1) {
+  margin-left: 12px;
+  margin-top: -4px;
+}
+@media only screen and (min-width: 321px) {
+  .logo-internal p:nth-child(1) {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-internal p:nth-child(1) {
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-internal p:nth-child(1) {
+    margin-left: 50px;
+  }
+}
+.logo-internal p:nth-child(2) {
+  margin-left: 40px;
+  margin-top: 0;
+}
+@media only screen and (min-width: 321px) {
+  .logo-internal p:nth-child(2) {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-internal p:nth-child(2) {
+    margin-left: 80px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .logo-internal p:nth-child(2) {
+    margin-left: 130px;
+  }
+}
+.logo-text {
+  color: #FFFFFF;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.1em;
+  font-weight: bold;
+  width: 70px;
+}
+@media only screen and (min-width: 321px) {
+  .logo-text {
+    font-size: 2.5em;
+    padding-top: 15px;
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-text {
+    font-size: 3.5em;
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .logo-text {
+    font-size: 5em;
+    width: 170px;
+  }
+}
+.logo-text:nth-child(1) {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 321px) {
+  .logo-text:nth-child(1) {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-text:nth-child(1) {
+    margin-left: 60px;
+  }
+}
+.logo-text:nth-child(2) {
+  margin-left: 40px;
+}
+@media only screen and (min-width: 321px) {
+  .logo-text:nth-child(2) {
+    margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .logo-text:nth-child(2) {
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .logo-text:nth-child(2) {
+    margin-left: 160px;
+  }
+}
+.logo-external a:link {
+  text-decoration: none;
+}
+.information {
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 100px;
+  text-align: center;
+  text-shadow: 5px 5px 5px #000000;
+}
+@media only screen and (min-width: 801px) {
+  .information {
+    margin-top: 200px;
+  }
+}
+.information p {
+  margin-top: 50px;
+}
+.footer {
+  background: #000000;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
+  margin-top: 200px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (min-width: 321px) {
+  .footer {
+    margin-top: 300px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .footer {
+    margin-top: 400px;
+  }
+}
+.footer i {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+@media only screen and (min-width: 321px) {
+  .footer i {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .footer i {
+    font-size: 45px;
+  }
+}
+.footer i:nth-child(1) {
+  margin-right: 20px;
+}
+.footer i:nth-child(3) {
+  margin-left: 20px;
+}
+.footer p {
+  margin-top: 50px;
+}
+/*Classes*/
+.line-rotate-1 {
+  top: 17px !important;
+  -webkit-transform: rotate(45deg);
+  /*Chrome 4.0-36.0, Safari 3.2-9.0, Opera 15.0-23.0*/
+  -moz-transform: rotate(45deg);
+  /*Firefox 3.5-16.0*/
+  -o-transform: rotate(45deg);
+  /*Opera 10.5*/
+  -ms-transform: rotate(45deg);
+  /*IE 9.0-10.0*/
+  transform: rotate(45deg);
+  /*Standar syntax*/
+}
+.line-rotate-2 {
+  top: 17px !important;
+  -webkit-transform: rotate(-45deg);
+  /*Chrome 4.0-36.0, Safari 3.2-9.0, Opera 15.0-23.0*/
+  -moz-transform: rotate(-45deg);
+  /*Firefox 3.5-16.0*/
+  -o-transform: rotate(-45deg);
+  /*Opera 10.5*/
+  -ms-transform: rotate(-45deg);
+  /*IE 9.0-10.0*/
+  transform: rotate(-45deg);
+  /*Standar syntax*/
+}
