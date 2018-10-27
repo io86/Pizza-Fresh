@@ -213,7 +213,7 @@ $(document).ready(function () {
         
         for(i = 0; i < orderedPizzaList.length; i++){
             
-            $html += "<li>" + orderedQuantityList[i] + " x " + orderedPizzaList[i] + "<span class='float-right'>€ " + orderedPriceList[i] + "</span>" + "<br><button class='btn-delete-item'>ENTFERNEN</button></li>";
+            $html += "<li>" + orderedQuantityList[i] + " x " + orderedPizzaList[i] + "<span class='float-right'>€ " + orderedPriceList[i] + "</span>" + "<br><button class='btn-delete-item'>DELETE</button></li>";
 
             
         }
